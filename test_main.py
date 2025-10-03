@@ -1,5 +1,5 @@
 import pytest
-from main import suma, resta, multiplica, divide
+from main import suma, resta, multiplica, divide, cubeNumber
 
 
 def test_suma():
@@ -23,3 +23,7 @@ def test_divide():
     assert divide(3, 1) == 3
     with pytest.raises(ValueError):
         divide(5, 0)
+
+def test_cubeNumber():
+    assert cube(3) == 27
+    assert cube(2) == 8
