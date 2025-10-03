@@ -17,3 +17,6 @@ def divide(a, b):
 
 def cuadrado(a):
     return a * a
+
+def cubo(a):
+    return a * a * a

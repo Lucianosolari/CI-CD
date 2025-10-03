@@ -1,5 +1,5 @@
 import pytest
-from main import suma, resta, multiplica, divide, cuadrado
+from main import suma, resta, multiplica, divide, cuadrado, cubo
 
 
 def test_suma():
@@ -27,3 +27,7 @@ def test_divide():
 def test_potencia():
     assert cuadrado(2) == 4
     assert cuadrado(5) == 25
+
+def test_cubo():
+    assert cubo(2) == 8
+    assert cubo(3) == 27
