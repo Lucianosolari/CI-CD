@@ -1,5 +1,6 @@
 import pytest
-from main import suma, resta, multiplica, divide
+from main import suma, resta, multiplica, divide , resto
+
 
 
 def test_suma():
@@ -23,3 +24,7 @@ def test_divide():
     assert divide(3, 1) == 3
     with pytest.raises(ValueError):
         divide(5, 0)
+
+def test_resto():
+    assert resto(2,1) == 0
+    assert resto(5,2) == 1
