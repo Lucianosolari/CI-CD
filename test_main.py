@@ -1,5 +1,5 @@
 import pytest
-from main import suma, resta, multiplica
+from main import suma, resta, multiplica, divide
 
 
 def test_suma():
@@ -18,8 +18,8 @@ def test_multiplica():
     assert multiplica(-1, 5) == -5
 
 
-# def test_divide():
-#     assert divide(10, 2) == 5
-#     assert divide(3, 1) == 3
-#     with pytest.raises(ValueError):
-#         divide(5, 0)
+def test_divide():
+    assert divide(10, 2) == 5
+    assert divide(3, 1) == 3
+    with pytest.raises(ValueError):
+        divide(5, 0)
