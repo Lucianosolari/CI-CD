@@ -1,5 +1,5 @@
 import pytest
-from main import suma, resta, multiplica, divide
+from main import suma, resta, multiplica, divide, isString
 
 
 def test_suma():
@@ -23,3 +23,8 @@ def test_divide():
     assert divide(3, 1) == 3
     with pytest.raises(ValueError):
         divide(5, 0)
+
+def test_isString():
+    assert isString(" ") == False
+    assert isString("Nombre3") == False
+    assert isString("Nombre") == True
