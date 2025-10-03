@@ -10,7 +10,7 @@ def test_suma():
 
 def test_resta():
     assert resta(5, 2) == 3
-    assert resta(1, 1) == 0
+    assert resta(1, 1) == -2
 
 
 def test_multiplica():
