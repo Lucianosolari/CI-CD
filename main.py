@@ -15,8 +15,5 @@ def divide(a, b):
         raise ValueError("No se puede dividir por cero")
     return a / b
 
-def cuadrado(a):
-    return a * a
-
-def cubo(a):
-    return a * a * a
+def isString(value):
+    return value.isalpha()
