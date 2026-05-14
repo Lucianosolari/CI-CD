@@ -1,12 +1,15 @@
 import pytest
-from main import suma, resta, multiplica, divide, isString
+from main import suma, resta, multiplica, divide, isString, potencia
 
 
 def test_suma():
     assert suma(2, 3) == 5
     assert suma(-1, 1) == 0
     assert suma(0.3, 0.7) == 1
-
+    
+def test_potencia():
+    assert potencia(2, 3) == 8
+    assert suma(3, 2) == 9
 
 def test_resta():
     assert resta(5, 2) == 3
