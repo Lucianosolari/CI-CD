@@ -28,3 +28,8 @@ def test_isString():
     assert isString(" ") == False
     assert isString("Nombre3") == False
     assert isString("Nombre") == True
+
+def test_isPar():
+    assert isPar(2) == True
+    assert isPar(7) == False
+    assert isPar(14) == True
