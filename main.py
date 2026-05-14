@@ -17,3 +17,6 @@ def divide(a, b):
 
 def isString(value):
     return value.isalpha()
+
+def isPar(n):
+    return n % 2 == 0
