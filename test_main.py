@@ -1,5 +1,5 @@
 import pytest
-from main import suma, resta, multiplica, divide, isString, isPar, Potencia
+from main import suma, resta, multiplica, divide, isString, isPar, potencia
 
 
 def test_suma():
