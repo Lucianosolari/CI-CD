@@ -9,7 +9,7 @@ def test_suma():
     
 def test_potencia():
     assert potencia(2, 3) == 8
-    assert suma(3, 2) == 9
+    assert potencia(3, 2) == 9
 
 def test_resta():
     assert resta(5, 2) == 3
