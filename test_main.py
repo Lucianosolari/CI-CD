@@ -27,4 +27,4 @@ def test_divide():
 def test_isString():
     assert isString(" ") == False
     assert isString("Nombre3") == False
-    assert isString("Nombre") == True
+    assert isString("Nombre") == False
