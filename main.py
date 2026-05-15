@@ -22,3 +22,6 @@ def isString(value):
 
 def isPar(n):
     return n % 2 == 0
+
+def isPositivo(n):
+    return n > 0
