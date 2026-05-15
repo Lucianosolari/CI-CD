@@ -1,5 +1,5 @@
 import pytest
-from main import suma, resta, multiplica, divide, isString, isPar, potencia
+from main import suma, resta, multiplica, divide, isString, isPar, potencia, raizCuadrada
 
 
 def test_suma():
@@ -36,3 +36,9 @@ def test_isPar():
     assert isPar(2) == True
     assert isPar(7) == False
     assert isPar(14) == True
+
+def test_raizCuadrada():
+    assert raizCuadrada(4) == 2
+    assert raizCuadrada(0) == 0
+    with pytest.raises(ValueError):
+        raizCuadrada(-1)
