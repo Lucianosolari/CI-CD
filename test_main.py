@@ -1,5 +1,5 @@
 import pytest
-from main import suma, resta, multiplica, divide, isString, isPar, potencia
+from main import suma, resta, multiplica, divide, isString, isPar, potencia, mayor
 
 
 def test_suma():
@@ -36,3 +36,8 @@ def test_isPar():
     assert isPar(2) == True
     assert isPar(7) == False
     assert isPar(14) == True
+
+def test_mayor():
+    assert mayor(10, 5) == 10
+    assert mayor(3, 8) == 8
+    assert mayor(-1, -5) == -1
