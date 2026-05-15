@@ -22,3 +22,8 @@ def isString(value):
 
 def isPar(n):
     return n % 2 == 0
+
+
+def saludo(nombre):
+    
+    return f"Hola, {nombre}!"
