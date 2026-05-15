@@ -22,3 +22,8 @@ def isString(value):
 
 def isPar(n):
     return n % 2 == 0
+
+def raiz_cuadrada(n):
+    if n < 0:
+        raise ValueError("No se puede calcular la raíz cuadrada de un número negativo")
+    return n ** 0.5
