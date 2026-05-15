@@ -23,23 +23,8 @@ def isString(value):
 
 def isPar(n):
     return n % 2 == 0
-    def factorial(n):
-    resultado = 1
 
-    for i in range(1, n + 1):
-        resultado *= i
-
-    return resultado
-def factorial(n):
-    resultado = 1
-
-    for i in range(1, n + 1):
-        resultado *= i
-
-    return resultado 
-
-def factorial (n) :
-    resultado = 1
-    for i in range(1, n + 1) : 
-    resultado *= i
-    return resultado 
+def raiz_cuadrada(n):
+    if n < 0:
+        raise ValueError("No se puede calcular la raíz cuadrada de un número negativo")
+    return n ** 0.5
