@@ -20,5 +20,26 @@ def divide(a, b):
 def isString(value):
     return value.isalpha()
 
+
 def isPar(n):
     return n % 2 == 0
+    def factorial(n):
+    resultado = 1
+
+    for i in range(1, n + 1):
+        resultado *= i
+
+    return resultado
+def factorial(n):
+    resultado = 1
+
+    for i in range(1, n + 1):
+        resultado *= i
+
+    return resultado 
+
+def factorial (n) :
+    resultado = 1
+    for i in range(1, n + 1) : 
+    resultado *= i
+    return resultado 
