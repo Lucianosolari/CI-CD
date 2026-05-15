@@ -1,5 +1,5 @@
 import pytest
-from main import suma, resta, multiplica, divide, isString, isPar, potencia
+from main import suma, resta, multiplica, divide, isString, isPar, potencia, factorial
 
 
 def test_suma():
@@ -36,3 +36,8 @@ def test_isPar():
     assert isPar(2) == True
     assert isPar(7) == False
     assert isPar(14) == True
+    
+def test_factorial():
+    assert factorial(5) == 120
+    assert factorial(3) == 6
+    assert factorial(1) == 1
